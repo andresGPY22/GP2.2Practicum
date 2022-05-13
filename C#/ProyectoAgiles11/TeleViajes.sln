@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeleViajes", "TeleViajes.csproj", "{FE5A80CC-0684-4561-86E8-7FBD0B11D0CA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A6F45296-3DA2-4575-A770-5451E2ECA8BB}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE5A80CC-0684-4561-86E8-7FBD0B11D0CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE5A80CC-0684-4561-86E8-7FBD0B11D0CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE5A80CC-0684-4561-86E8-7FBD0B11D0CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE5A80CC-0684-4561-86E8-7FBD0B11D0CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B3F763FB-BAE5-4CC1-BB99-44D42A605863}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://ips-iwt31gagiles11.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = TeleViajes.csproj
+		SccLocalPath1 = .
+	EndGlobalSection
+EndGlobal

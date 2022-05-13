@@ -1,0 +1,130 @@
+﻿@model Portal.Models.Experiencia
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Experiencia</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Tipo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tipo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.agenciaPatrocinadora)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.agenciaPatrocinadora)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ciudad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ciudad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Lugar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Lugar)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dias)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dias)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaIni)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaIni)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaFin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaFin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Hora)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hora)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Duracion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Duracion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PrecioMin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PrecioMin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PrecioMed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PrecioMed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PrecioMax)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PrecioMax)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DescripcionPrecios)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DescripcionPrecios)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Excepciones)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Excepciones)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.experienciaId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

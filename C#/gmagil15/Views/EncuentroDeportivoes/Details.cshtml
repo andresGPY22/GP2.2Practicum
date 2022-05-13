@@ -1,0 +1,98 @@
+﻿@model Portal.Models.EncuentroDeportivo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>EncuentroDeportivo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Deporte)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Deporte)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EquipoLocal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EquipoLocal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EquipoVisitante)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EquipoVisitante)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ciudad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ciudad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Lugar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Lugar)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Hora)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hora)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PrecioMin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PrecioMin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PrecioMed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PrecioMed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PrecioMax)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PrecioMax)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdEncuentroDeportivo }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

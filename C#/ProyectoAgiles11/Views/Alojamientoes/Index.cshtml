@@ -1,0 +1,118 @@
+﻿@model IEnumerable<TeleViajes.Models.Alojamiento>
+
+@{
+    ViewBag.Title = "Alojamientos";
+}
+
+<h2>Índice de Alojamientos</h2>
+
+<p>
+    @Html.ActionLink("Crear Nuevo", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @*@@Html.DisplayNameFor(model => model.Nombre)*@
+            <b>Nombre</b>
+        </th>
+        <th>
+            @* @Html.DisplayNameFor(model => model.CiudadPueblo)*@
+            <b>Ciudad/Pueblo</b>
+        </th>
+        <th>
+            @* @Html.DisplayNameFor(model => model.Provincia)*@
+            <b>Provincia</b>
+        </th>
+        <th>
+            @* @Html.DisplayNameFor(model => model.ComunidadAutonoma)*@
+            <b>Comunidad Autónoma</b>
+        </th>
+        <th>
+            @* @Html.DisplayNameFor(model => model.Pais)*@
+            <b>País</b>
+        </th>
+        <th>
+            @* @Html.DisplayNameFor(model => model.Tipo)*@
+            <b>Tipo</b>
+        </th>
+        <th>
+            @* @Html.DisplayNameFor(model => model.Categoria)*@
+            <b>Categoría</b>
+        </th>
+        <th>
+            @* @Html.DisplayNameFor(model => model.Descripcion)*@
+            <b>Descripción</b>
+        </th>
+        <th>
+            @* @Html.DisplayNameFor(model => model.HayParking)*@
+            <b>Parking</b>
+        </th>
+        <th>
+            @*  @Html.DisplayNameFor(model => model.HayPiscina)*@
+            <b>Piscina</b>
+        </th>
+        <th>
+            @*  @Html.DisplayNameFor(model => model.HayInstalacionesDeportivas)*@
+            <b>Instalaciones Deportivas</b>
+        </th>
+        <th>
+            @*  @Html.DisplayNameFor(model => model.HayInstalacionesInfantiles)*@
+            <b>Instalaciones Infantiles</b>
+        </th>
+        <th>
+            @*  @Html.DisplayNameFor(model => model.VideoFoto)*@
+            <b>Videos/Fotos</b>
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CiudadPueblo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Provincia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ComunidadAutonoma)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pais)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tipo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Categoria)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Descripcion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HayParking)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HayPiscina)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HayInstalacionesDeportivas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HayInstalacionesInfantiles)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VideoFoto)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.AlojamientoId }) |
+            @Html.ActionLink("Detalles", "Details", new { id=item.AlojamientoId }) |
+            @Html.ActionLink("Borrar", "Delete", new { id=item.AlojamientoId })
+        </td>
+    </tr>
+}
+
+</table>

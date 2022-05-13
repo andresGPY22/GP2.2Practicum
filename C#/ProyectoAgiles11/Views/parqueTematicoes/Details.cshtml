@@ -1,0 +1,90 @@
+﻿@model TeleViajes.Models.parqueTematico
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>parqueTematico</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ciudadPueblo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ciudadPueblo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.provincia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.provincia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.comunidadAutonoma)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.comunidadAutonoma)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pais)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pais)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tipo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tipo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.precioMin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.precioMin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.precioMax)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.precioMax)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.videoFoto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.videoFoto)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

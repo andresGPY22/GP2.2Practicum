@@ -1,0 +1,128 @@
+﻿@model TeleViajes.Models.Alojamiento
+
+@{
+    ViewBag.Title = "Borrar";
+}
+
+<h2>Borrar</h2>
+
+<h3>¿Estás seguro de que quieres eliminar esto?</h3>
+<div>
+    <h4>Alojamiento</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CiudadPueblo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CiudadPueblo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Provincia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Provincia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ComunidadAutonoma)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ComunidadAutonoma)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pais)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pais)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tipo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tipo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Categoria)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Categoria)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HayParking)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HayParking)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HayPiscina)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HayPiscina)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HayInstalacionesDeportivas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HayInstalacionesDeportivas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HayInstalacionesInfantiles)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HayInstalacionesInfantiles)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VideoFoto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VideoFoto)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Borrar" class="btn btn-primary" /> |
+            @Html.ActionLink("Volver a la lista", "Index")
+        </div>
+    }
+</div>

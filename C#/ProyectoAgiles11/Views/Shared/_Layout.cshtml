@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - TeleViajes</title>
+    <link rel="stylesheet" href="~/Content/fontawesome-all.css">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <header>
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="~/Home">TeleViajes</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="fa fa-suitcase"></span>&nbsp Recursos
+                        </a>
+                        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="~/Alojamientoes">Alojamientos</a>
+                            <a class="dropdown-item" href="~/barRestaurantees">Bares y restaurantes</a>
+                            <a class="dropdown-item" href="~/Excursions">Excursiones y visitas guiadas</a>
+                            <a class="dropdown-item" href="~/parqueTematicoes">Parques temáticos</a>
+                            <a class="dropdown-item" href="~/Experiencias">Experiencias</a>
+                            <a class="dropdown-item" href="~/Degustacions">Degustaciones gastronómicas</a>
+                            <a class="dropdown-item" href="~/LocalesDeOcioNocturnoes">Locales de ocio nocturno</a>
+                            <a class="dropdown-item" href="~/Espectaculoes">Espectáculos</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="~/Opinions"><span class="fa fa-comment"></span>&nbsp Opiniones</a>
+                    </li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </nav>
+        </header>
+
+    <main>
+    <div class="container-fluid body-content pt-4">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - TeleViajes</p>
+        </footer>
+    </div>
+        </main>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

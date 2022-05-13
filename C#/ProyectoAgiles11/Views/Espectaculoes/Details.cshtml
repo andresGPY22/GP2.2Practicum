@@ -1,0 +1,181 @@
+﻿@model TeleViajes.Models.Espectaculo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Espectaculo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Titulo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Titulo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tipo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tipo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Lugar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Lugar)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CiudadPueblo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CiudadPueblo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Provincia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Provincia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ComunidadAutonoma)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ComunidadAutonoma)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pais)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pais)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DuracionMinutos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DuracionMinutos)
+        </dd>
+        <div class="form-group">
+            <b>Días de la semana que hay espectáculo:</b>
+
+        </div>
+        <dt>
+            @Html.DisplayNameFor(model => model.Lunes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Lunes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Martes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Martes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Miercoles)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Miercoles)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Jueves)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Jueves)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Viernes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Viernes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sabado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sabado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Domingo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Domingo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaInicial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaInicial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaFinal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaFinal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PrecioMinimo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PrecioMinimo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PrecioMaximo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PrecioMaximo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VideoFoto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VideoFoto)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.EspectaculoID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

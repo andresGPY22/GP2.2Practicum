@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("FastAndTickets", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Opiniones", "Index", "PortalComentarioses")</li>
+                    <li>@Html.ActionLink("Conciertos", "Index", "Conciertoes")</li>
+                    <li>@Html.ActionLink("Obras de Teatro", "Index", "ObraDeTeatroes")</li>
+                    <li>@Html.ActionLink("Encuentros Deportivos", "Index", "EncuentroDeportivoes")</li>
+                    <li>@Html.ActionLink("Visita Turística Guiada", "Index", "VisitaTuristicas")</li>
+                    <li>@Html.ActionLink("Experiencia", "Index", "Experienciaes")</li>
+                    <li>@Html.ActionLink("Musical", "Index", "Musicals")</li>
+                    <li>@Html.ActionLink("Museo", "Index", "Museos")</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div align="center">
+        <img src="..\imagenes\logo.png">
+
+
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            </footer>
+        </div>
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+    </div>
+</body>
+</html>

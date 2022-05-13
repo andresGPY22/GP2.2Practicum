@@ -1,0 +1,51 @@
+﻿@model IEnumerable<TeleViajes.Models.Opinion>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Recurso)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NombreRecurso)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Voto)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Recurso)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NombreRecurso)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Descripcion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Voto)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.OpinionId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.OpinionId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.OpinionId })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,147 @@
+﻿@model IEnumerable<TeleViajes.Models.Espectaculo>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Titulo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tipo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Lugar)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CiudadPueblo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Provincia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ComunidadAutonoma)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pais)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DuracionMinutos)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Lunes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Martes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Miercoles)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Jueves)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Viernes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sabado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Domingo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaInicial)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaFinal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PrecioMinimo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PrecioMaximo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VideoFoto)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Titulo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tipo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Lugar)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CiudadPueblo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Provincia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ComunidadAutonoma)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pais)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DuracionMinutos)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Lunes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Martes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Miercoles)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Jueves)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Viernes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sabado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Domingo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaInicial)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaFinal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PrecioMinimo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PrecioMaximo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VideoFoto)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.EspectaculoID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.EspectaculoID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.EspectaculoID })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,98 @@
+﻿@model TeleViajes.Models.Excursion
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Excursion</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CiudadPueblo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CiudadPueblo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pago)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pago)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Recorrido)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Recorrido)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pais)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pais)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Agencia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Agencia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tipo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tipo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Duracion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Duracion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Precio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Precio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DiasDisponible)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiasDisponible)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VideoFoto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VideoFoto)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ExcursionId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

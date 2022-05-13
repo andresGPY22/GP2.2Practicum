@@ -1,0 +1,99 @@
+﻿@model IEnumerable<Portal.Models.VisitaTuristica>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Ciudad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Recorrido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pago)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Agencia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tipo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaInicio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaFin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Hora)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Duracion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Precio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DiasSemana)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Excepciones)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ciudad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Recorrido)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pago)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Agencia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tipo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaInicio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaFin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Hora)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Duracion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Precio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DiasSemana)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Excepciones)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.VisitaTuristicaId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.VisitaTuristicaId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.VisitaTuristicaId })
+        </td>
+    </tr>
+}
+
+</table>

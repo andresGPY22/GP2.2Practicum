@@ -1,0 +1,112 @@
+﻿@model TeleViajes.Models.barRestaurante
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>barRestaurante</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ciudad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ciudad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.provincia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.provincia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.comunidadAutonoma)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.comunidadAutonoma)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pais)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pais)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tipoComida)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tipoComida)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.estilo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.estilo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.precioMin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.precioMin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.precioMax)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.precioMax)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.valoracionMedia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.valoracionMedia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.videoFoto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.videoFoto)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-primary" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
